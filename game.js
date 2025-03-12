@@ -93,7 +93,7 @@ class Game {
         this.ball3.draw('white');
         this.ball4.draw('cyan');
         this.ball5.draw('gray');
-        
+
         this.paddle1.draw('green', 100);
         this.paddle2.draw('red', 0);
     }
@@ -118,7 +118,7 @@ class Game {
 
         // Colisiones con las paletas
         if (this.ball.x - this.ball.radius <= this.paddle1.x + this.paddle1.width &&
-            this.ball.y >= this.paddle1.y && this.ball.y <= this.paddle1.y + this.paddle1.height  + 50 + 50) {
+            this.ball.y >= this.paddle1.y && this.ball.y <= this.paddle1.y + this.paddle1.height + 50 + 50) {
             this.ball.speedX = -this.ball.speedX;
         }
 
@@ -146,7 +146,7 @@ class Game {
         // Detectar cuando la pelota sale de los bordes (punto marcado)
         if (this.ball2.x - this.ball2.radius <= 0 || this.ball2.x + this.ball2.radius >= canvas.width) {
             this.ball2.reset();
-        }   
+        }
         // -------------------------------------------
         // Colisiones con las paletas
         if (this.ball3.x - this.ball3.radius <= this.paddle1.x + this.paddle1.width &&
@@ -162,7 +162,7 @@ class Game {
         // Detectar cuando la pelota sale de los bordes (punto marcado)
         if (this.ball3.x - this.ball3.radius <= 0 || this.ball3.x + this.ball3.radius >= canvas.width) {
             this.ball3.reset();
-        }                        
+        }
         // -------------------------------------------
         // Colisiones con las paletas
         if (this.ball4.x - this.ball4.radius <= this.paddle1.x + this.paddle1.width &&
@@ -178,7 +178,7 @@ class Game {
         // Detectar cuando la pelota sale de los bordes (punto marcado)
         if (this.ball4.x - this.ball4.radius <= 0 || this.ball4.x + this.ball4.radius >= canvas.width) {
             this.ball4.reset();
-        }   
+        }
         // -------------------------------------------
         // Colisiones con las paletas
         if (this.ball5.x - this.ball5.radius <= this.paddle1.x + this.paddle1.width &&
@@ -194,7 +194,7 @@ class Game {
         // Detectar cuando la pelota sale de los bordes (punto marcado)
         if (this.ball5.x - this.ball5.radius <= 0 || this.ball5.x + this.ball5.radius >= canvas.width) {
             this.ball5.reset();
-        }           
+        }
 
     }
 
